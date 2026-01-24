@@ -1,0 +1,41 @@
+<div class="container py-4">
+  <!-- <h3 class="text-center fw-bold mb-4 section-title">Products We Offer</h3> -->
+
+    <h2 class="text-center section-title fw-bold mb-4 ">
+        Products We Offer
+    <span class="underline"></span>
+  </h2>
+
+ <span class="underline"></span>
+  <div class="row g-3">
+    <div class="col-6 col-md-4 col-lg-3"
+         *ngFor="let p of products"
+         @cardAnim>
+
+      <div class="card product-card shadow-sm h-100">
+        <img [src]="p.image" class="card-img-top" [alt]="p.name">
+
+        <div class="overlay d-flex align-items-center justify-content-center">
+          <span class="text-white fw-semibold">{{ p.name }}</span>
+        </div>
+
+        <!-- <button class="btn btn-sm btn-danger remove-btn"
+                (click)="remove(p.id)">
+          ✕
+        </button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<app-brand-carousel
+  title="Brands We Deal In"
+  [logos]="brands">
+</app-brand-carousel>
+
+<app-brand-carousel
+  title="Key Customers"
+  [logos]="customers">
+</app-brand-carousel>

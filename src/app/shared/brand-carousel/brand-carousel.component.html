@@ -1,0 +1,17 @@
+<section class="brand-section">
+  <h2 class="section-title">
+    {{ title }}
+    <span class="underline"></span>
+  </h2>
+
+  <div class="carousel">
+    <div class="track">
+      <div
+        class="logo-card"
+        *ngFor="let logo of logos.concat(logos)"
+      >
+        <img [src]="logo.image" [alt]="logo.name" />
+      </div>
+    </div>
+  </div>
+</section>

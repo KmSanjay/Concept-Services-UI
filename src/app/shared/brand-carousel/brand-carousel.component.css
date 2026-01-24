@@ -1,0 +1,66 @@
+.brand-section {
+  padding: 40px 20px;
+  background: #f6f6f6;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+
+  .underline {
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: red;
+    margin: 8px auto 0;
+  }
+}
+
+/* Carousel */
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.track {
+  display: flex;
+  gap: 20px;
+  animation: scroll 25s linear infinite;
+}
+
+.logo-card {
+  min-width: 220px;
+  height: 120px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.logo-card img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+/* Infinite animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause when hover */
+.carousel:hover .track {
+  animation-play-state: paused;
+}
