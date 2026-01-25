@@ -1,0 +1,160 @@
+<!-- ================================================= -->
+<!-- 1️⃣ HERO CAROUSEL -->
+<!-- ================================================= -->
+<div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button
+      *ngFor="let banner of banners; let i = index"
+      type="button"
+      data-bs-target="#homeCarousel"
+      [attr.data-bs-slide-to]="i"
+      [class.active]="i === 0">
+    </button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+
+    <div
+      class="carousel-item"
+      *ngFor="let banner of banners; let i = index"
+      [class.active]="i === 0">
+
+      <img [src]="banner.image" class="d-block w-100 carousel-img" alt="Banner">
+
+      <div class="carousel-overlay"></div>
+
+      <!-- Text overlay only if content exists -->
+      <div class="carousel-caption custom-caption text-start"
+           *ngIf="banner.title1 || banner.title2 || banner.title3 || banner.buttonText">
+
+        <h2 *ngIf="banner.title1">
+          {{ banner.title1 }}
+          <span class="highlight-yellow" *ngIf="banner.highlight1">
+            {{ banner.highlight1 }}
+          </span>
+        </h2>
+
+        <h1 *ngIf="banner.title2">
+          {{ banner.title2 }}
+          <span class="highlight-blue" *ngIf="banner.highlight2">
+            {{ banner.highlight2 }}
+          </span>
+        </h1>
+
+        <h3 *ngIf="banner.title3">{{ banner.title3 }}</h3>
+
+        <a *ngIf="banner.buttonText"
+           class="btn btn-danger mt-4"
+           [routerLink]="banner.buttonLink || '/'">
+          {{ banner.buttonText }}
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+<!-- ================================================= -->
+<!-- 2️⃣ REASONS TO CHOOSE US -->
+<!-- ================================================= -->
+<section class="reasons-section text-center">
+  <p class="small-title">BEST CHOICE IN MARKET</p>
+  <h2 class="section-title">Reasons to Choose Us</h2>
+  <div class="underline"></div>
+
+  <div class="container mt-5">
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="reason-card">
+          <div class="icon">🧪</div>
+          <h5>Best Industrial Solutions</h5>
+          <p>A leading name engaged in providing best in class industrial solutions.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="reason-card">
+          <div class="icon">🤝</div>
+          <h5>After Sales Service</h5>
+          <p>We provide these services to customers with experienced professionals.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="reason-card">
+          <div class="icon">🏅</div>
+          <h5>Quality Product</h5>
+          <p>Best possible quality of product range and services is maintained always.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="reason-card">
+          <div class="icon">📍</div>
+          <h5>Our Branches</h5>
+          <p>07 offices in Rajasthan and Gujarat.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================= -->
+<!-- 3️⃣ WELCOME / ABOUT COMPANY -->
+<!-- ================================================= -->
+<section class="welcome-section">
+  <div class="container">
+    <div class="row align-items-center g-4">
+
+      <!-- Left Image -->
+      <div class="col-md-6">
+        <img src="assets/images/about1.jpg" class="img-fluid rounded shadow" />
+      </div>
+
+      <!-- Right Content -->
+      <div class="col-md-6">
+        <p class="small-title text-danger">WELCOME TO</p>
+        <h2>N B Mercantile Private Limited</h2>
+
+        <p class="mt-3">
+          In a market that's growing more and more competitive with each passing day,
+          we have been able to carve a niche for ourselves only because of our
+          organization's commitment towards quality and a single minded goal to excel.
+        </p>
+
+        <p>
+          NB Mercantile is an ISO 9001:2015 certified company established in 1996 with
+          over 24 years of experience serving mining, cement, textile, hospitality,
+          chemical, food and beverage and general process industries across Rajasthan
+          and Gujarat.
+        </p>
+
+        <ul class="features-list">
+          <li>✔ Quality Control System</li>
+          <li>✔ 100% Satisfaction Guarantee</li>
+          <li>✔ Environmental Sensitivity</li>
+          <li>✔ Personalized Solutions</li>
+        </ul>
+
+        <button class="btn btn-danger mt-3">Read More</button>
+      </div>
+
+    </div>
+  </div>
+</section>

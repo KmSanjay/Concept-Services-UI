@@ -1,0 +1,116 @@
+/* ================= CAROUSEL ================= */
+.carousel {
+  height: 95vh;
+}
+
+.carousel-item {
+  height: 95vh;
+  position: relative;
+}
+
+.carousel-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.1)
+  );
+}
+
+.custom-caption {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 650px;
+}
+
+.custom-caption h1 {
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.custom-caption h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.custom-caption h3 {
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+.highlight-yellow { color: #ffc107; }
+.highlight-blue { color: #00c2ff; }
+
+/* ================= REASONS SECTION ================= */
+.reasons-section {
+  padding: 80px 0;
+  background: #fafafa;
+}
+
+.small-title {
+  font-size: 13px;
+  color: red;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.underline {
+  width: 80px;
+  height: 3px;
+  background: red;
+  margin: 10px auto 0;
+}
+
+.reason-card {
+  background: #fff;
+  padding: 35px 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(-8px);
+}
+
+.reason-card .icon {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+/* ================= WELCOME SECTION ================= */
+.welcome-section {
+  padding: 90px 0;
+}
+
+.features-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features-list li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .custom-caption h1 { font-size: 32px; }
+  .custom-caption h2 { font-size: 26px; }
+  .custom-caption h3 { font-size: 18px; }
+}
