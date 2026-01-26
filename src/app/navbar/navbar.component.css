@@ -1,45 +1,103 @@
-/* Make toolbar sticky at top */
-mat-toolbar {
+.navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+/* Brand */
+.brand {
   display: flex;
-  justify-content: space-between;
-}
-
-/* Add spacing between buttons */
-button[mat-button] {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-/* Spacer takes remaining space */
-.spacer {
-  flex: 1 1 auto;
-}
-
-/* Change button color on hover */
-button[mat-button]:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Optional: small screen adjustments */
-@media (max-width: 600px) {
-  mat-toolbar {
-    flex-wrap: wrap;
-  }
-
-  button[mat-button] {
-    width: 100%;
-    margin: 5px 0;
-  }
+  align-items: center;
+  gap: 8px;
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;      /* makes it round */
-  object-fit: cover;       /* prevents distortion */
-  background-color: transparent; /* optional background */
-  padding: 4px;            /* space inside circle */
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+/* Spacer */
+.spacer {
+  flex: 1;
+}
+
+/* Desktop menu */
+.desktop-menu {
+  display: flex;
+  gap: 8px;
+}
+
+/* Mobile hamburger hidden on desktop */
+.mobile-menu-btn {
+  display: none;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  
+  .mobile-menu-btn {
+    display: inline-flex;
+    height: 56px;
+    width: 56px;
+    background-color: inherit;
+    text-align: center;
+  }
+}
+
+.mobile-menu-panel button{
+  align-items: center;
+}
+
+.mat-toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.mat-toolbar .mat-icon-button {
+  background-color: inherit;
+  border-radius: 4px;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.firstIcon a{
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
+}
+
+
+/* Bootstrap NAVBAR  */
+
+/* Logo */
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+/* Desktop spacing */
+.navbar-nav .nav-link {
+  padding: 8px 16px;
+  font-weight: 500;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #0d6efd; /* same as bg-primary */
+  }
+
+  .navbar-nav .nav-link {
+    text-align: center;
+    padding: 12px 0;
+  }
 }

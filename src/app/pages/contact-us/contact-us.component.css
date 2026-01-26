@@ -1,0 +1,93 @@
+.contact-banner {
+  height: 280px;
+  background: url('/assets/images/contact-banner.jpg') center/cover no-repeat;
+  color: white;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.contact-card {
+  /* background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  transition: 0.3s; */
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* fill parent column */
+  text-align: center;
+
+  i {
+    font-size: 28px;
+    margin-bottom: 10px;
+    display: block;
+    color: #dc3545;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+}
+
+.branch-card {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
+
+.contact-form-section {
+  background: #9b0000;
+}
+
+.form-box {
+  max-width: 720px;
+  background: #111;
+  padding: 30px;
+  border-radius: 14px;
+  color: white;
+
+  input, textarea {
+    background: #2a2a2a;
+    border: none;
+    color: white;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #bbb;
+  }
+}
+.section-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+  text-align: center;
+
+  .underline {
+    display: block;
+    width: 200px;
+    height: 2px;
+    background: red;
+    margin: 8px auto 0;
+  }
+}
+
+.row.g-4 {
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  gap: 1.5rem;
+}
+
+.col-md-4 {
+  display: flex; /* makes the card inside stretch */
+  flex: 1 1 30%; /* flexible width: grow, shrink, min 300px */
+}

@@ -1,0 +1,30 @@
+.about-hero {
+  height: 280px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('/assets/images/about-banner.jpg') center/cover no-repeat;
+
+  .hero-title {
+    font-size: 46px;
+    font-weight: 700;
+  }
+}
+
+.why-us-section {
+  background: #000;
+
+  .why-card {
+    padding: 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.bg-orange {
+  background: #fb8c00;
+}
+
+.bg-brown {
+  background: #8d6e63;
+}

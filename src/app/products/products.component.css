@@ -43,12 +43,11 @@
   font-weight: 600;
   margin-bottom: 30px;
   position: relative;
-  display: inline-block;
-text-align: center;
+  text-align: center;
 
   .underline {
     display: block;
-    width: 120px;
+    width: 200px;
     height: 2px;
     background: red;
     margin: 8px auto 0;

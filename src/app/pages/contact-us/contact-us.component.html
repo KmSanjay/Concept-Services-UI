@@ -1,0 +1,87 @@
+<!-- Banner -->
+<section class="contact-banner d-flex align-items-center justify-content-center">
+ <!-- <h2 class="section-title brand-section">
+    Contact Us
+    <span class="underline"></span>
+  </h2> -->
+</section>
+
+<!-- Contact Cards -->
+<section class="container py-5">
+ <h2 class="section-title brand-section">
+    Let’s talk and get started
+    <span class="underline"></span>
+  </h2>
+  <div class="row g-4 text-center">
+    <div class="col-md-4">
+      <div class="contact-card">
+        <i class="bi bi-house-door"></i>
+        <h5>Udaipur Branch</h5>
+        <p>E 89–1A, Road No.12, RIICO Industrial Area, Madri, Udaipur – 313002</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="contact-card">
+        <i class="bi bi-telephone"></i>
+        <h5>Contact Number</h5>
+        <p>+91 6378 128 627</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="contact-card">
+        <i class="bi bi-envelope"></i>
+        <h5>Email</h5>
+        <p>info&#64;nbmercantile.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Branches -->
+<section class="bg-light py-5">
+  <div class="container text-center">
+ <h2 class="section-title brand-section">
+   Our Branches
+    <span class="underline"></span>
+  </h2>
+
+    <div class="row g-4">
+      <div class="col-md-2 col-6" *ngFor="let branch of branches">
+        <div class="branch-card">{{ branch }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section class="contact-form-section py-5">
+  <div class="container">
+    <div class="form-box mx-auto">
+      <h4 class="fw-bold mb-3">Question? Write to us!</h4>
+
+      <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Your Name" required [(ngModel)]="form.name" name="name">
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Your Email" required [(ngModel)]="form.email" name="email">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Contact Number" [(ngModel)]="form.phone" name="phone">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="City" [(ngModel)]="form.city" name="city">
+          </div>
+          <div class="col-12">
+            <textarea class="form-control" rows="4" placeholder="Message" [(ngModel)]="form.message" name="message"></textarea>
+          </div>
+        </div>
+
+        <button class="btn btn-danger mt-3 px-4">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
