@@ -98,8 +98,6 @@
   }
 }
 
-
-
 /* ================= REASONS SECTION ================= */
 .reasons-section {
   padding: 80px 0;
@@ -144,9 +142,6 @@
 }
 
 /* ================= WELCOME SECTION ================= */
-/* .welcome-section {
-  padding: 90px 0;
-} */
 
 .welcome-section {
   position: relative;
@@ -171,6 +166,10 @@
   z-index: 0;
 }
 
+
+.welcome-section {
+  padding: 90px 0;
+}
 
 .features-list {
   list-style: none;
@@ -250,4 +249,12 @@
   }
 }
 
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .custom-caption h1 { font-size: 32px; }
+  .custom-caption h2 { font-size: 26px; }
+  .custom-caption h3 { font-size: 18px; }
+}
 
