@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './contact-us.component.css'
 })
 export class ContactUsComponent {
-branches = ['Jaipur', 'Jodhpur', 'Bhiwadi', 'Bhilwara', 'Vadodara'];
+branches = ['Noida','Prayagraj','Aligarh','Pune','Mumbai'];
 
   form = {
     name: '',

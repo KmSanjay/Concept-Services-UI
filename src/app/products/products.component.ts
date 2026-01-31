@@ -23,12 +23,12 @@ import { BrandCarouselComponent } from '../shared/brand-carousel/brand-carousel.
 })
 export class ProductsComponent {
 products = [
-    { id: 1, name: 'SKF Lincoln', image: 'assets/images/skg.jpg' },
-    { id: 2, name: 'Shell', image: 'assets/images/skg.jpg' },
-    { id: 3, name: 'Victaulic', image: 'assets/images/skg.jpg' },
-    { id: 4, name: 'Donaldson', image: 'assets/images/skg.jpg' },
-    { id: 5, name: 'Xylem Water Solution', image: 'assets/images/skg.jpg' },
-    { id: 6, name: 'Hikoki', image: 'assets/images/skg.jpg' }
+    { id: 1, name: 'LINCON', image: 'assets/images/skg.jpg' },
+    { id: 2, name: 'Shell', image: 'assets/images/product_1.jpeg' },
+    { id: 3, name: 'Victaulic', image: 'assets/images/product_2.jpeg' },
+    { id: 4, name: 'Donaldson', image: 'assets/images/product_3.jpeg' },
+    { id: 5, name: 'Xylem Water Solution', image: 'assets/images/product_4.jpeg' },
+    { id: 6, name: 'Hikoki', image: 'assets/images/product_5.jpeg' }
   ];
 
   remove(id: number) {
@@ -37,16 +37,19 @@ products = [
 
   // Deal with Brands  List
    brands = [
-    { name: 'JK Fenner', image: 'assets/brands/hikoki.png' },
-   { name: 'Hikoki', image: 'assets/brands/hikoki.png' },
-    { name: 'JK Fenner', image: 'assets/brands/hikoki.png' },
-    { name: 'Lincoln', image: 'assets/brands/hikoki.png' }
+    { name: 'JK Fenner', image: 'assets/brands/donald.png' },
+   { name: 'Hikoki', image: 'assets/brands/3m.jpg' },
+    { name: 'JK Fenner', image: 'assets/brands/karcher.png' },
+    { name: 'Lincoln', image: 'assets/brands/lincon.png' },
+    { name: 'Lincoln', image: 'assets/brands/xylem.png' }
   ];
 
   // Key Customers Areas
   customers = [
-    { name: 'RSWM', image: 'assets/customers/rswm.png' },
-    { name: 'RVUN', image: 'assets/customers/rswm.png' },
-    { name: 'SK Khetan', image: 'assets/customers/rswm.png' }
+    { name: 'RSWM', image: 'assets/customers/max.png' },
+    { name: 'RVUN', image: 'assets/customers/ambuja.png' },
+    { name: 'SK Khetan', image: 'assets/customers/jk.png' },
+    { name: 'SK Khetan', image: 'assets/customers/jcl.png' },
+    { name: 'SK Khetan', image: 'assets/customers/jsw.png' }
   ];
 }

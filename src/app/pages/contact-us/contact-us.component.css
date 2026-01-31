@@ -91,3 +91,14 @@
   display: flex; /* makes the card inside stretch */
   flex: 1 1 30%; /* flexible width: grow, shrink, min 300px */
 }
+
+/* Center branch cards on mobile */
+@media (max-width: 767px) {
+  .bg-light .row {
+    justify-content: center;
+  }
+
+  .branch-card {
+    text-align: center;
+  }
+}
